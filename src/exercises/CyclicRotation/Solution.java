@@ -18,8 +18,8 @@ public class Solution {
         if (A == null || A.length == 0 || A.length == 1 || A.length == K) {
             return A;
         }
-        if (K > A.length) {
-            K = K % A.length;
+        if (K > A.length) {// If rotations are higher than the array length...
+            K = K % A.length;// The remainder is the needed rotations.
         }
         int[] leftArray = Arrays.copyOfRange(A, A.length - K, A.length);
         int[] rightArray = Arrays.copyOfRange(A, 0, A.length - K);
@@ -31,15 +31,4 @@ public class Solution {
         }
         return A;
     }
-    // private void solution(int[] array, int rotations) {
-    // int temp, swappedPosition;
-    // int[] original = Arrays.copyOf(array, array.length);
-    // for (int i = 0; i < rotations; i++) {
-    // swappedPosition = array.length - (rotations - i);
-    // temp = array[i];
-    // array[i] = array[swappedPosition];
-    // array[swappedPosition] = temp;
-    // }
-    // System.out.println(String.format("Solution for: %s is %s", Arrays.toString(original), Arrays.toString(array)));
-    // }
 }
