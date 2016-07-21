@@ -1,4 +1,4 @@
-package exercises.CyclicRotation;
+package exercises.Arrays.CyclicRotation;
 
 import java.util.Arrays;
 

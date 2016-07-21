@@ -1,4 +1,4 @@
-package exercises.OddOccurrencesInArray;
+package exercises.Arrays.OddOccurrencesInArray;
 
 import java.util.HashSet;
 import java.util.Set;
